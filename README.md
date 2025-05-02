@@ -1,12 +1,7 @@
-# React + Vite
+Using localStorage in web applications we can store data persistently on the client-side. Key naming is crucial for organizing the data in localStorage because it gives-
+1. Clarity: Descriptive keys make it easier to understand what data is stored.
+2. Avoiding collisions: Unique and structured names help prevent overwriting or conflicting data across different parts of your app.
+3. Manageability: It’s easier to find and update specific data when the keys are well-named (e.g., user_data, theme_preference, etc.).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+useState hook - it is used to manage my state of data. in my application i've used it multiple times like for title, content.
+useEffect hook - it is used to perform side effects tasks like fetching Data from an API, updating UI element, setting up event listeners. it also helps us to get rid of unnecessary re-rendering based on dependency inside []. i've used it in my update title, content section that will only render when i want to edit my note
